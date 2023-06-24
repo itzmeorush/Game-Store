@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Game Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/fav.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="progress">
+        <div class="progress-bar" id="scroll-bar">
+
+        </div>
+    </div> 
+    <header>
+        <div class="nav container">
+            <a href="index.html" class="logo">Game <span>Store</span> </a>
+            <div class="nav-icons">
+                <i class='bx bx-bell bx-tada-hover' id="bell-icon"><span></span></i>
+                <i class='bx bxs-download'></i>
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            <!-- menu-->
+            <div class="menu">
+                <img src="./img/menu.png" alt="">
+                <div class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#new">New Games</a></li>
+                    <li><a href="#action">Action Games</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </div>
+            </div>
+            <!-- notification. -->
+            <div class="notification">
+                <div class="notification-box">
+                    <i class='bx bxs-check-circle'></i>
+                    <p>Congratulation, Your game download successfully.</p>
+                </div>
+                <div class="notification-box box-color">
+                    <i class='bx bxs-x-circle'></i>
+                    <p>Could not apply changes.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- home section--->
+    <div class="video-container container">
+        <video src="download-files/Subway Surfers Official.mp4" autoplay muted></video>
+    </div>
+    <div class="about container">
+        <h2 class="mt-5" style="border-bottom: 4px solid #fa5353; width: 20%;">About Game</h2>
+        <p class="py-3">If you’re tired of playing the same game and want to explore some new titles and genres then don’t worry. Our list of the best mobile games that you should play on iOS and Android has you covered for 2023.</p>
+    </div>
+    <div class="screenshots container">
+        <h2 class="my-5" style="border-bottom: 4px solid #fa5353; width: 20%;">ScreenShots</h2>
+        <div class="screenshot-content">
+            <img src="./img/screenshots1.jpg" alt="" class="img-fluid">
+            <img src="./img/screenshots2.jpg" alt="" class="img-fluid">
+            <img src="./img/screenshots3.jpg" alt="" class="img-fluid">
+        </div>
+       
+    </div>
+    <div class="download">
+        <h2 class="py-4">Download Links</h2>
+        <div class="download-links">
+            <a href="download-files/Subway Surface.apk">For Android</a>
+            <a href="">For Ios</a>
+            <a href="">For Window</a>
+        </div>
+    </div>
+    <!-- footer--->
+    <footer class="d-flex justify-content-between container py-5">
+        <h6>&copy; Developed by Mr_deepanshu</h6>
+        <div class="social">
+            <i class='bx bxl-facebook bx-flashing fs-3' ></i>
+            <i class='bx bxl-instagram bx-flashing fs-3' ></i>
+            <i class='bx bxl-twitter bx-flashing fs-3' ></i>
+            <i class='bx bxl-discord-alt bx-flashing fs-3' ></i>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script> -->
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+
+    <script>
+        let menu = document.querySelector('.menu-icon');
+        let navbar = document.querySelector('.menu')
+        menu.onclick = () => {
+            menu.classList.toggle('move');
+            navbar.classList.toggle('active');
+        };
+        window.onscroll = function(){mufunction()};
+        function mufunction(){
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("scroll-bar").style.width = scrolled + '%'; 
+        };
+
+        // notification-
+        let bell = document.querySelector('.notification');
+         
+        document.querySelector('#bell-icon').onclick = () =>{
+            bell.classList.toggle('active')
+        }
+
+        // swiper
+        var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    </script>
+</body>
+
+</html>

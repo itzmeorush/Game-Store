@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Game Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/fav.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="progress">
+        <div class="progress-bar" id="scroll-bar">
+
+        </div>
+    </div>
+    <header>
+        <div class="nav container">
+            <a href="index.html" class="logo">Game <span>Store</span> </a>
+            <div class="nav-icons">
+                <i class='bx bx-bell bx-tada-hover' id="bell-icon"><span></span></i>
+                <i class='bx bxs-download'></i>
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            <!-- menu-->
+            <div class="menu">
+                <img src="./img/menu.png" alt="">
+                <div class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#new">New Games</a></li>
+                    <li><a href="#action">Action Games</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </div>
+            </div>
+            <!-- notification. -->
+            <div class="notification">
+                <div class="notification-box">
+                    <i class='bx bxs-check-circle'></i>
+                    <p>Congratulation, Your game download successfully.</p>
+                </div>
+                <div class="notification-box box-color">
+                    <i class='bx bxs-x-circle'></i>
+                    <p>Could not apply changes.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- home section--->
+    <section class="home container" id="home">
+        <img src="./img/home.png" alt="">
+        <div class="home-text">
+            <h1>CITY OF THE <br> FUTURE</h1>
+            <a href="#" class="btn1">Available Now</a>
+        </div>
+    </section>
+    <!-- trending section---->
+    <section class="container trending py-5 my-5" id="trending">
+        <div class="heading pt-5 mt-5">
+            <i class='bx bxs-flame'></i>
+            <h2 >Trending Games</h2>
+        </div>
+        <div class="trending-content swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./img/trending1.webp" alt="">
+                        <div class="box-text">
+                            <h3>Cyberpunk 2077</h3>
+                            <h4>Action</h4>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.7</span>
+                            </div>
+                            <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./img/trending7.png" alt="">
+                        <div class="box-text">
+                            <h3>Halo INFINITE</h3>
+                            <h4>Action</h4>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.7</span>
+                            </div>
+                            <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./img/trending4.jpg" alt="">
+                        <div class="box-text">
+                            <h3>GHOST</h3>
+                            <h4>Action</h4>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.7</span>
+                            </div>
+                            <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./img/trending5.png" alt="">
+                        <div class="box-text">
+                            <h3>GTA V</h3>
+                            <h4>Action</h4>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.7</span>
+                            </div>
+                            <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./img/trending3.jpg" alt="" class="img-fluid">
+                        <div class="box-text">
+                            <h3>Assassins'Creed </h3>
+                            <h4>Action</h4>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.7</span>
+                            </div>
+                            <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./img/new6.png" alt="" class="img-fluid">
+                        <div class="box-text">
+                            <h3>PUBG GLOBAL</h3>
+                            <h4>Action</h4>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.7</span>
+                            </div>
+                            <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./img/trending8.png" alt="" class="img-fluid">
+                        <div class="box-text">
+                            <h3>Resident Evil</h3>
+                            <h4>Action</h4>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.7</span>
+                            </div>
+                            <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./img/trending6.jpg" alt="" class="img-fluid">
+                        <div class="box-text">
+                            <h3>DYING LIGHT 2</h3>
+                            <h4>Action</h4>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.7</span>
+                            </div>
+                            <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./img/trending2.jpg" alt="" class="img-fluid">
+                        <div class="box-text">
+                            <h3>Battlefield</h3>
+                            <h4>Action</h4>
+                            <div class="rating-load">
+                                <div class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <span>4.7</span>
+                                </div>
+                                <div>
+                                <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+               
+              </div>
+        </div>
+    </section>
+    <!-- news games. -->
+    <section class="new container pt-5 mt-5" id="new">
+        <div class="heading">
+            <i class='bx bx-game'></i>
+            <h2>New Games</h2>
+        </div>
+        <div class="new-content">
+            <div class="box">
+                <a href="next.html"><img src="./img/new1.jpg" alt=""></a>
+                <div class="box-text">
+                    <h3>Subway Surfers</h3>
+                    <h4>Action</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <span>4.7</span>
+                    </div>
+                    <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/new2.jpg" alt="">
+                <div class="box-text">
+                    <h3>Subway Surfers</h3>
+                    <h4>Action</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <span>4.7</span>
+                    </div>
+                    <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/new3.jpg" alt="">
+                <div class="box-text">
+                    <h3>Subway Surfers</h3>
+                    <h4>Action</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <span>4.7</span>
+                    </div>
+                    <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/new4.jpg" alt="">
+                <div class="box-text">
+                    <h3>Subway Surfers</h3>
+                    <h4>Action</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <span>4.7</span>
+                    </div>
+                    <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/new5.png" alt="">
+                <div class="box-text">
+                    <h3>Subway Surfers</h3>
+                    <h4>Action</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <span>4.7</span>
+                    </div>
+                    <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/new6.png" alt="">
+                <div class="box-text">
+                    <h3>Subway Surfers</h3>
+                    <h4>Action</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <span>4.7</span>
+                    </div>
+                    <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/new7.png" alt="">
+                <div class="box-text">
+                    <h3>Subway Surfers</h3>
+                    <h4>Action</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <span>4.7</span>
+                    </div>
+                    <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/new8.jpg" alt="">
+                <div class="box-text">
+                    <h3>Subway Surfers</h3>
+                    <h4>Action</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <span>4.7</span>
+                    </div>
+                    <a href="#" class="box-btn"><i class='bx bx-download' ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- next page. -->
+    <section class="next-page container py-5">
+        <a href="#" class=" btn2">Next Page</a>
+    </section>
+    <!-- footer--->
+    <footer class="d-flex justify-content-between container py-5">
+        <h6>&copy; Developed by Mr_deepanshu</h6>
+        <div class="social">
+            <i class='bx bxl-facebook bx-flashing fs-3' ></i>
+            <i class='bx bxl-instagram bx-flashing fs-3' ></i>
+            <i class='bx bxl-twitter bx-flashing fs-3' ></i>
+            <i class='bx bxl-discord-alt bx-flashing fs-3' ></i>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script> -->
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+
+    <script>
+        let menu = document.querySelector('.menu-icon');
+        let navbar = document.querySelector('.menu')
+        menu.onclick = () => {
+            menu.classList.toggle('move');
+            navbar.classList.toggle('active');
+        }
+
+        // notification-
+        let bell = document.querySelector('.notification');
+         
+        document.querySelector('#bell-icon').onclick = () =>{
+            bell.classList.toggle('active')
+        }
+
+        window.onscroll = function(){mufunction()};
+        function mufunction(){
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("scroll-bar").style.width = scrolled + '%'; 
+        };
+        // swiper
+        var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    </script>
+</body>
+
+</html>
